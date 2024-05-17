@@ -23,13 +23,13 @@ if(data) {
     id = LIST.length;
     loadList(LIST);
 } else{
-list = [];
+LIST = [];
 id = 0;
 }
 // load items to the user's interface
 function loadList(array){
     array.forEach(function(item){
-addToDo(ietm.name, item.id, item.done, item.trash);
+addToDo(item.name, item.id, item.done, item.trash);
     });
 }
 // Show todays date
