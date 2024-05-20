@@ -32,6 +32,13 @@ function loadList(array){
 addToDo(item.name, item.id, item.done, item.trash);
     });
 }
+// clear from local storage
+clear.addEventListener("click", function (){
+    localStorage.clear();
+    location.reload();
+});
+
+
 // Show todays date
 const options = { weekday: "long", month: "short", day: "numeric" };
 const today = new Date();
